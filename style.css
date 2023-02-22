@@ -1,0 +1,177 @@
+body{
+    max-width: 1440px;
+    background-color:  hsl(229, 57%, 11%);
+    background-image: url('bg-desktop.png');
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 1025px 250px;
+    color: white;
+    display: inline-flex;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+*  {box-sizing: border-box}
+.data{
+    padding: 20px ;
+    text-align: left;
+    border-radius: 10px;
+    font-size: 10px;
+    margin-right: 30px ;
+    margin-top: 180px;
+    margin-bottom: 100px;
+    background-color: hsl(228, 56%, 26%);
+    position: relative;
+    
+}
+#first{
+    margin-bottom: 10px;
+    margin-top: px;
+
+}
+.remainder{
+    left: 7px;
+    right: auto;
+    top: -30px;
+    position: relative;
+    margin-bottom:60px;
+    padding: 15px;
+    margin-left: 190px;
+    border-radius:10px 10px 10px 10px ;
+    background-color: white;
+    font-size: small;
+    font-weight: 900;
+    color: black;
+}
+.remainder:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    z-index: 1;
+    border-width: 0 25px 39px 0;
+    left: 70%;
+    top: auto;
+    right: auto;
+    bottom: -20px;
+    border: 23px solid transparent;
+    border-color: transparent #fff transparent transparent;
+    margin-left: -15px;
+    /* border-bottom: 0;
+    border-left: 0;
+    margin-left: -20px;
+    margin-bottom: -20px; */
+}
+.progressBar{
+    width: 300px;
+    background-color: hsl(229, 57%, 11%);
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-right: 2px;
+    border-radius: 7px;
+    margin-top: 5px;
+}
+.progress{
+    width: 81.5%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    padding: -2px ;
+    border-radius: 7px;
+}
+.dot{
+    width: 7px;
+    height: 7px;
+    margin-left: 233px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+}
+#zero{
+    font-size: 7px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+#th{
+    margin-left: 250px;
+}
+.svgs{
+    width: 300px;
+    padding: 20px ;
+    padding-right: 40px;
+    text-align: left;
+    border-radius: 10px 70px 10px 10px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: 170px;
+    margin-right: 20px ;
+    background-color: hsl(228, 56%, 26%);
+
+}
+.icons{
+    width: 30px;
+    /*padding: 5px;
+    padding-left: 10px; */
+    height: 30px;
+    background-color:  hsl(229, 57%, 11%);
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 7px;
+    margin-top: 5px;
+    margin-right: 5px;
+    background-size: 60px 160px;
+
+}
+#doc{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+@media screen and (max-width: 600px) {
+    body{
+        background-image: url('bg-mobile.png');
+        color: white;
+        display: inline;
+        margin: auto;
+    
+    }
+    .data{
+        width: 90%;
+        text-align: center;
+        margin-left: 5%;
+        margin-top: -18%;
+
+    }
+    .svgs{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 30%;
+        margin-right: -38%;
+    }
+    .progressBar{
+        width: 100%;
+    }
+    .dot{
+        margin-left: 90%;
+    }
+    #zero{
+        width: 100%;
+        margin-left: 0%;
+    }
+    #th{
+        margin-left: 70% ;
+    }
+    .remainder{
+        top: 90%;
+        left: -30%;
+        right: auto;
+        bottom: 10%;
+        position: absolute;
+        margin-bottom: 20%;
+        text-align: center;
+        padding: 15px;
+        height: fit-content;
+
+    }
+    .remainder:after{
+        border-color: transparent;
+    }
+
+
+}
