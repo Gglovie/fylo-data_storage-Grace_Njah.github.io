@@ -12,33 +12,27 @@ body{
 }
 *  {box-sizing: border-box}
 main{
-    margin-top: 15%;
-    max-height: 100vh;
-    display: grid;
-    grid-template-columns: 3fr 3fr ;
-    align-content: center;
+    height: 100vh;
+    display: flex;
+    gap: 45px;
+    align-items: center;
     justify-content: center;
 }
 .data{
-    padding: 20px ;
-    padding-left: 5%;
+    padding: 40px ;
+    margin-top: 50px;
     padding-bottom: 50px;
-    margin: 20% 0 20% -18%;
     text-align: left;
     border-radius: 10px;
     font-size: 10px;
-    margin-top: 30%;
-    margin-right: 30%;
     background-color: hsl(228, 56%, 26%);
-
-
-    
+    position: relative;  
 }
 .remainder{
     left: 7px;
     right: auto;
     top: -40px;
-    position: relative;
+    position: absolute;
     margin-bottom:60px;
     padding: 15px;
     padding-top: 20px;
@@ -66,7 +60,7 @@ main{
     margin-bottom: -20px; */
 }
 .progressBar{
-    width: 95%;
+    width: 350px;
     background-color: hsl(229, 57%, 11%);
     padding-top: 1px;
     padding-left: 1px;
@@ -98,25 +92,29 @@ main{
     margin-left: 80%;
 }
 .svgs{
-    height: auto;
-    padding: 5% 5% 0px 5%;
     text-align: left;
     border-radius: 10px 70px 10px 10px;
-    margin: 20% 25% 20% 30%;
     background-color: hsl(228, 56%, 26%);
+    height: 220px;
+    width: 345px;
+    padding: 40px;
 
+}
+.icons-wrapper{
+    display: flex;
+    margin-top: 35px;
 }
 .icons{
     /*padding: 5px;
     padding-left: 10px; */
-    width: 18%;
-    height: 25%;
+    width: 50px;
+    height: 50px;
     background-color:  hsl(229, 57%, 11%);
     border-radius: 10px;
-    padding: 5%;
-    margin-top: 5px;
     margin-right: 5%;
-    background-size: 60px 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 /* .doc{
